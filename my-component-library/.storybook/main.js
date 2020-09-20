@@ -5,7 +5,16 @@ module.exports = {
   ],
   "addons": [
     "@storybook/addon-links",
+    
+    "@storybook/addon-contexts/register",
+    "@storybook/addon-background/register",
     "@storybook/addon-essentials",
-    "@storybook/preset-create-react-app"
+    "@storybook/preset-create-react-app",
+    {
+      name:"@storybook/addon-docs",
+      options: {
+        configureJSX: true
+      }
+    }
   ]
 }
